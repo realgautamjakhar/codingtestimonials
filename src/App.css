@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+*,*::after,*::before{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.container{
+      margin: auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      background-image: url('src/assets/pattern-curve.svg');
+      background-position: bottom left;
+      background-repeat: no-repeat;
+}
+
+.testinomials-text{
+      display: flex;
+      flex-direction: column;
+      max-width: 650px;
+      transform: translateX(80px);
+      background-image: url('src/assets/pattern-quotes.svg');
+      background-size: 100px;
+      background-repeat: no-repeat;
+      background-position: 20% -0%;  
+      z-index: 2;
+}
+.testinomials-text h2 {
+      font-size: 32px;
+      font-weight: 300;
+}
+.user-info{
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      object-fit: contain;
+}
+
+.image-container{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+}
+.image-bg{
+      position: absolute;
+      width: 125%;
+      z-index: -1;
+}
+.user-image{
+      width: 100%;
+      height: auto;
+      box-shadow: 0px 33px 100px -65px rgb(32, 32, 70);
+}
+
+
+.buttons{
+      background-color: white;
+      position: absolute;
+      left: 40px;
+      bottom: -30px;
+      border-radius: 50px;
+      box-shadow: 0px 33px 100px -15px rgb(32, 32, 70);
+}
+.buttons button{
+      background-color: transparent;
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+      .container{
+            flex-direction: column-reverse;
+            margin: 1rem;
+      }
+      .testinomials-text{
+            margin-top: 5rem;
+            transform: revert;
+            text-align: center;
+            background-position: top center;
+      }
+      .user-image{
+            max-width: 300px;
+      }
+      .user-info{
+            justify-content: center;
+            flex-direction: column;
+            gap: 0;
+      }
+}
