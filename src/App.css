@@ -14,7 +14,7 @@
       align-items: center;
       justify-content: center;
       font-family: 'Inter', sans-serif;
-      background-image: url('src/assets/pattern-curve.svg');
+      background-image: url('assets/pattern-curve.svg');
       background-position: bottom left;
       background-repeat: no-repeat;
 }
@@ -24,7 +24,7 @@
       flex-direction: column;
       max-width: 650px;
       transform: translateX(80px);
-      background-image: url('src/assets/pattern-quotes.svg');
+      background-image: url('assets/pattern-quotes.svg');
       background-size: 100px;
       background-repeat: no-repeat;
       background-position: 20% -0%;  

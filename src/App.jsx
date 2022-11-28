@@ -7,7 +7,7 @@ const data = [
   of my dreams and so excited about the future. ”`,
     user: "Tanya Sinclair",
     userProfession: "UX Engineer",
-    image: "src/assets/image-tanya.jpg",
+    image: "assets/image-tanya.jpg",
   },
   {
     testimonials: `“ If you want to lay the best foundation possible I’d recommend taking this course. 
@@ -15,7 +15,7 @@ const data = [
   starting up as a professional developer. ”`,
     user: "John Tarkpor",
     userProfession: "Junior Front-end Developer",
-    image: "src/assets/image-john.jpg",
+    image: "assets/image-john.jpg",
   },
 ];
 
@@ -48,14 +48,14 @@ function App() {
         </div>
       </section>
       <section className="image-container">
-        <img className="image-bg" src="src/assets/pattern-bg.svg" alt="" />
+        <img className="image-bg" src="assets/pattern-bg.svg" alt="" />
         <img className="user-image" src={data[value].image} alt="" />
         <div className="buttons">
           <button onClick={handleSlidesPrev}>
             <img src="src/assets/icon-prev.svg" alt="" />
           </button>
           <button onClick={handleSlidesNext}>
-            <img src="src/assets/icon-next.svg" alt="" />
+            <img src="assets/icon-next.svg" alt="" />
           </button>
         </div>
       </section>
