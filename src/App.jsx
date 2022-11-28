@@ -52,7 +52,7 @@ function App() {
         <img className="user-image" src={data[value].image} alt="" />
         <div className="buttons">
           <button onClick={handleSlidesPrev}>
-            <img src="src/assets/icon-prev.svg" alt="" />
+            <img src="assets/icon-prev.svg" alt="" />
           </button>
           <button onClick={handleSlidesNext}>
             <img src="assets/icon-next.svg" alt="" />
